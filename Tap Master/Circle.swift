@@ -9,11 +9,24 @@
 import Foundation
 import SpriteKit
 
+extension SKSpriteNode {
+    
+    //To make nodes glow like my face
+    func addGlow(radius: Float = 40) {
+        let effectNode = SKEffectNode()
+        effectNode.shouldRasterize = true
+        addChild(effectNode)
+        effectNode.addChild(SKSpriteNode(texture: texture))
+        effectNode.filter = CIFilter(name: "CIGaussianBlur", withInputParameters: ["inputRadius":radius])
+    }
+}
+
 class Circle : SKSpriteNode {
     
     static let CIRCLE_SPRITES = ["greenc", "redc", "greenc"]
     static let diameter: CGFloat = UIScreen.main.bounds.size.width/6
     static let MINIMUM_VELOCITY : CGFloat = 1.25
+    static let NUMBER_OF_CIRCLES = 6
     
     var velocity : CGFloat = 0.00
     
@@ -24,7 +37,7 @@ class Circle : SKSpriteNode {
         super.init(texture: texture, color: UIColor.clear, size: CGSize(width: Circle.diameter, height: Circle.diameter))
         self.color = ("greenc" == currColor) ? UIColor.green : UIColor.red
         self.velocity = Circle.MINIMUM_VELOCITY
-        
+       
     }
     
     func update() {
@@ -46,6 +59,11 @@ class Circle : SKSpriteNode {
     
     func calculateVelocity(score: Int) -> CGFloat {
         return CGFloat(score)/40 + Circle.MINIMUM_VELOCITY + CGFloat(arc4random_uniform(101))/60
+    }
+    
+    func switchColor() {
+        self.color = (UIColor.green == self.color) ? UIColor.red : UIColor.green
+        self.texture = (UIColor.green == self.color) ? SKTexture(imageNamed: "greenc") : SKTexture(imageNamed: "redc")
     }
     
     required init?(coder aDecoder: NSCoder) {

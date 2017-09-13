@@ -18,10 +18,12 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         let mainMenuState = MainMenuState(scene: self)
+        let aboutGameState = AboutGameState(scene: self)
+        let topScoresState = TopScoresState(scene: self)
         let activeGameState = ActiveGameState(scene: self)
         let gameOverState = GameOverState(scene: self)
         
-        stateMachine = GKStateMachine(states: [mainMenuState, activeGameState, gameOverState])
+        stateMachine = GKStateMachine(states: [mainMenuState, aboutGameState, topScoresState, activeGameState, gameOverState])
         stateMachine.enter(MainMenuState.self)
         
     }

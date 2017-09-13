@@ -20,6 +20,9 @@
 		907C42A81F67190000B96C10 /* GameOverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42A71F67190000B96C10 /* GameOverState.swift */; };
 		907C42AA1F6747CB00B96C10 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42A91F6747CB00B96C10 /* Circle.swift */; };
 		907C42AC1F67569100B96C10 /* GameSceneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42AB1F67569100B96C10 /* GameSceneState.swift */; };
+		90B3C3931F685000003F20A5 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90B3C3921F685000003F20A5 /* IndieFlower.ttf */; };
+		90B3C3951F68A594003F20A5 /* AboutGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3941F68A594003F20A5 /* AboutGameState.swift */; };
+		90B3C3991F68BC2C003F20A5 /* TopScoresState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3981F68BC2C003F20A5 /* TopScoresState.swift */; };
 		90E1703A1F664C5900CA6CE5 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90E170381F664C5900CA6CE5 /* background-music-aac.caf */; };
 		90E1703B1F664C5900CA6CE5 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */; };
 /* End PBXBuildFile section */
@@ -61,6 +64,9 @@
 		907C42A71F67190000B96C10 /* GameOverState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverState.swift; sourceTree = "<group>"; };
 		907C42A91F6747CB00B96C10 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		907C42AB1F67569100B96C10 /* GameSceneState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneState.swift; sourceTree = "<group>"; };
+		90B3C3921F685000003F20A5 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
+		90B3C3941F68A594003F20A5 /* AboutGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutGameState.swift; sourceTree = "<group>"; };
+		90B3C3981F68BC2C003F20A5 /* TopScoresState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScoresState.swift; sourceTree = "<group>"; };
 		90E170381F664C5900CA6CE5 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,11 +125,14 @@
 				906227A21F65329300EAE5AE /* GameViewController.swift */,
 				907C42A31F6718DB00B96C10 /* MainMenuState.swift */,
 				907C42A71F67190000B96C10 /* GameOverState.swift */,
+				90B3C3981F68BC2C003F20A5 /* TopScoresState.swift */,
 				907C42A51F6718ED00B96C10 /* ActiveGameState.swift */,
 				907C42AB1F67569100B96C10 /* GameSceneState.swift */,
+				90B3C3941F68A594003F20A5 /* AboutGameState.swift */,
 				907C42A91F6747CB00B96C10 /* Circle.swift */,
 				906227A41F65329300EAE5AE /* Main.storyboard */,
 				906227A71F65329300EAE5AE /* Assets.xcassets */,
+				90B3C3921F685000003F20A5 /* IndieFlower.ttf */,
 				906227A91F65329300EAE5AE /* LaunchScreen.storyboard */,
 				906227AC1F65329300EAE5AE /* Info.plist */,
 			);
@@ -269,6 +278,7 @@
 				906227A81F65329300EAE5AE /* Assets.xcassets in Resources */,
 				90E1703B1F664C5900CA6CE5 /* pew-pew-lei.caf in Resources */,
 				906227AB1F65329300EAE5AE /* LaunchScreen.storyboard in Resources */,
+				90B3C3931F685000003F20A5 /* IndieFlower.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,11 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90B3C3991F68BC2C003F20A5 /* TopScoresState.swift in Sources */,
 				907C42AC1F67569100B96C10 /* GameSceneState.swift in Sources */,
 				907C42AA1F6747CB00B96C10 /* Circle.swift in Sources */,
 				906227A11F65329300EAE5AE /* GameScene.swift in Sources */,
 				907C42A81F67190000B96C10 /* GameOverState.swift in Sources */,
 				907C42A41F6718DB00B96C10 /* MainMenuState.swift in Sources */,
+				90B3C3951F68A594003F20A5 /* AboutGameState.swift in Sources */,
 				907C42A61F6718ED00B96C10 /* ActiveGameState.swift in Sources */,
 				906227A31F65329300EAE5AE /* GameViewController.swift in Sources */,
 				9062279B1F65329300EAE5AE /* AppDelegate.swift in Sources */,
