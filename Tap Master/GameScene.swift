@@ -12,6 +12,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    var profileViewController : UIViewController?
     var stateMachine: GKStateMachine!
     var score = 0
     
@@ -19,11 +20,13 @@ class GameScene: SKScene {
         
         let mainMenuState = MainMenuState(scene: self)
         let aboutGameState = AboutGameState(scene: self)
-        let topScoresState = TopScoresState(scene: self)
+        let highScoreState = HighScoreState(scene: self)
+        highScoreState.parentViewController = self.profileViewController
         let activeGameState = ActiveGameState(scene: self)
         let gameOverState = GameOverState(scene: self)
+        gameOverState.parentViewController = self.profileViewController
         
-        stateMachine = GKStateMachine(states: [mainMenuState, aboutGameState, topScoresState, activeGameState, gameOverState])
+        stateMachine = GKStateMachine(states: [mainMenuState, aboutGameState, highScoreState, activeGameState, gameOverState])
         stateMachine.enter(MainMenuState.self)
         
     }

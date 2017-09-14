@@ -49,12 +49,12 @@ class MainMenuState: GameSceneState{
         aboutButton.fontColor = SKColor.white
         aboutButton.position = CGPoint(x: (self.scene?.size.width)! * 0.5, y: (self.scene?.size.height)! * 0.4)
         
-        //TopScores
-        let tscoreButton = SKLabelNode(fontNamed: "Indie Flower")
-        tscoreButton.text = "Top Scores"
-        tscoreButton.fontSize = 30
-        tscoreButton.fontColor = SKColor.white
-        tscoreButton.position = CGPoint(x: (self.scene?.size.width)! * 0.5, y: (self.scene?.size.height)! * 0.3)
+        //HighScore
+        let hscoreButton = SKLabelNode(fontNamed: "Indie Flower")
+        hscoreButton.text = "High Score"
+        hscoreButton.fontSize = 30
+        hscoreButton.fontColor = SKColor.white
+        hscoreButton.position = CGPoint(x: (self.scene?.size.width)! * 0.5, y: (self.scene?.size.height)! * 0.3)
         
         //Add the circles to the circle array
         for i in 0..<Circle.NUMBER_OF_CIRCLES {
@@ -71,7 +71,7 @@ class MainMenuState: GameSceneState{
         self.scene?.addChild(title)
         self.scene?.addChild(playButton)
         self.scene?.addChild(aboutButton)
-        self.scene?.addChild(tscoreButton)
+        self.scene?.addChild(hscoreButton)
    
     }
     
@@ -82,7 +82,7 @@ class MainMenuState: GameSceneState{
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
-        return (stateClass == ActiveGameState.self) || (stateClass == AboutGameState.self) || (stateClass == TopScoresState.self)
+        return (stateClass == ActiveGameState.self) || (stateClass == AboutGameState.self) || (stateClass == HighScoreState.self)
     }
     
     override func update(deltaTime seconds: TimeInterval) {
@@ -104,8 +104,8 @@ class MainMenuState: GameSceneState{
                 case "About"?:
                     self.stateMachine?.enter(AboutGameState.self)
                     break
-                case "Top Scores"?:
-                    self.stateMachine?.enter(TopScoresState.self)
+                case "High Score"?:
+                    self.stateMachine?.enter(HighScoreState.self)
                     break
                 default:
                     break

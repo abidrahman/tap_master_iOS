@@ -15,6 +15,8 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         
         let scene = GameScene(size: view.bounds.size)
+        scene.profileViewController = self
+        
         let skView = view as! SKView
         
         skView.showsFPS = true
@@ -29,4 +31,5 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
 }

@@ -22,7 +22,7 @@
 		907C42AC1F67569100B96C10 /* GameSceneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42AB1F67569100B96C10 /* GameSceneState.swift */; };
 		90B3C3931F685000003F20A5 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90B3C3921F685000003F20A5 /* IndieFlower.ttf */; };
 		90B3C3951F68A594003F20A5 /* AboutGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3941F68A594003F20A5 /* AboutGameState.swift */; };
-		90B3C3991F68BC2C003F20A5 /* TopScoresState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3981F68BC2C003F20A5 /* TopScoresState.swift */; };
+		90B3C3991F68BC2C003F20A5 /* HighScoreState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3981F68BC2C003F20A5 /* HighScoreState.swift */; };
 		90E1703A1F664C5900CA6CE5 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90E170381F664C5900CA6CE5 /* background-music-aac.caf */; };
 		90E1703B1F664C5900CA6CE5 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,7 @@
 		907C42AB1F67569100B96C10 /* GameSceneState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneState.swift; sourceTree = "<group>"; };
 		90B3C3921F685000003F20A5 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
 		90B3C3941F68A594003F20A5 /* AboutGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutGameState.swift; sourceTree = "<group>"; };
-		90B3C3981F68BC2C003F20A5 /* TopScoresState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopScoresState.swift; sourceTree = "<group>"; };
+		90B3C3981F68BC2C003F20A5 /* HighScoreState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreState.swift; sourceTree = "<group>"; };
 		90E170381F664C5900CA6CE5 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 				906227A21F65329300EAE5AE /* GameViewController.swift */,
 				907C42A31F6718DB00B96C10 /* MainMenuState.swift */,
 				907C42A71F67190000B96C10 /* GameOverState.swift */,
-				90B3C3981F68BC2C003F20A5 /* TopScoresState.swift */,
+				90B3C3981F68BC2C003F20A5 /* HighScoreState.swift */,
 				907C42A51F6718ED00B96C10 /* ActiveGameState.swift */,
 				907C42AB1F67569100B96C10 /* GameSceneState.swift */,
 				90B3C3941F68A594003F20A5 /* AboutGameState.swift */,
@@ -303,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90B3C3991F68BC2C003F20A5 /* TopScoresState.swift in Sources */,
+				90B3C3991F68BC2C003F20A5 /* HighScoreState.swift in Sources */,
 				907C42AC1F67569100B96C10 /* GameSceneState.swift in Sources */,
 				907C42AA1F6747CB00B96C10 /* Circle.swift in Sources */,
 				906227A11F65329300EAE5AE /* GameScene.swift in Sources */,
