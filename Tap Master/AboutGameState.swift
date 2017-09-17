@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import SpriteKit
 import GameplayKit
+import Firebase
 
 class AboutGameState: GameSceneState{
     var scene: GameScene?
@@ -24,6 +25,9 @@ class AboutGameState: GameSceneState{
         
         //Background
         self.scene?.backgroundColor = SKColor.black
+        
+        //Analytics
+        Analytics.logEvent(AnalyticsEventViewItem, parameters: [AnalyticsParameterItemID : "About Game Screen" as NSObject])
         
         //HowToPlay
         let howtoPlay = SKLabelNode(fontNamed: "Indie Flower")
@@ -47,8 +51,8 @@ class AboutGameState: GameSceneState{
         taptheRed.position = CGPoint(x: (self.scene?.size.width)! * 0.5, y: (self.scene?.size.height)! * 0.55)
         
         //Cirles
-        let greenc = SKSpriteNode(imageNamed: "greenc")
-        let redc = SKSpriteNode(imageNamed: "redc")
+        let greenc = SKSpriteNode(imageNamed: "greenc3")
+        let redc = SKSpriteNode(imageNamed: "redc3")
         greenc.position = CGPoint(x: (self.scene?.size.width)! * 0.5, y: (self.scene?.size.height)! * 0.70)
         greenc.color = UIColor.green
         redc.position = CGPoint(x: (self.scene?.size.width)! * 0.5, y: (self.scene?.size.height)! * 0.45)

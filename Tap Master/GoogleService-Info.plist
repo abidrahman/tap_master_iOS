@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>616446535711-6eho8aqc9gff7of8tpilaqj09m19rq54.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.616446535711-6eho8aqc9gff7of8tpilaqj09m19rq54</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVAQhN_q5-2G6RVVJyUNWwvZZYb1xnDcc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>616446535711</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.abidrahman.tapmaster</string>
+	<key>PROJECT_ID</key>
+	<string>tap-master-1b980</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tap-master-1b980.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:616446535711:ios:58f2ee2b3653ca22</string>
+	<key>DATABASE_URL</key>
+	<string>https://tap-master-1b980.firebaseio.com</string>
+</dict>
+</plist>

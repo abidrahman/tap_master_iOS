@@ -10,14 +10,17 @@ import Foundation
 import UIKit
 import SpriteKit
 import GameplayKit
+import GoogleMobileAds
+import Firebase
 
 class HighScoreState: GameSceneState{
     
     var parentViewController : UIViewController?
     var scene: GameScene?
+    var bannerAd: GADBannerView!
     
     let hScore = SKLabelNode(fontNamed: "Indie Flower")
-    let highScore = UserDefaults.standard.value(forKey: "Highscore") as? Int
+    var highScore = UserDefaults.standard.value(forKey: "Highscore") as? Int
     var counter = 0
     
     init(scene: GameScene){
@@ -27,6 +30,18 @@ class HighScoreState: GameSceneState{
     
     override func didEnter(from previousState: GKState?) {
         self.scene?.backgroundColor = SKColor.black
+        highScore = UserDefaults.standard.value(forKey: "Highscore") as? Int
+        
+        //Analytics
+        Analytics.logEvent(AnalyticsEventViewItem, parameters: [AnalyticsParameterItemID : "High Score Screen" as NSObject])
+
+        //Ad
+        bannerAd = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerAd.frame.origin.y = (self.scene?.size.height)! - bannerAd.frame.size.height
+        self.parentViewController?.view.addSubview(bannerAd)
+        bannerAd.adUnitID = "ca-app-pub-3441960749414963/5109155133"
+        bannerAd.rootViewController = self.parentViewController
+        bannerAd.load(GADRequest())
         
         //HScoreLabel
         let hScoreLabel = SKLabelNode(fontNamed: "Indie Flower")
@@ -70,6 +85,7 @@ class HighScoreState: GameSceneState{
     }
     
     override func willExit(to nextState: GKState) {
+        bannerAd.removeFromSuperview()
         self.scene?.removeAllChildren()
     }
     

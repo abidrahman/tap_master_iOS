@@ -10,10 +10,14 @@ import Foundation
 import UIKit
 import SpriteKit
 import GameplayKit
+import Firebase
+import GoogleMobileAds
 
 class GameOverState: GameSceneState{
     var parentViewController : UIViewController?
     var scene: GameScene?
+    var bannerAd: GADBannerView!
+    
     
     init(scene: GameScene){
         self.scene = scene
@@ -22,6 +26,25 @@ class GameOverState: GameSceneState{
     
     override func didEnter(from previousState: GKState?) {
         self.scene?.backgroundColor = SKColor.black
+        let numPlayed = UserDefaults.standard.value(forKey: "numPlayed") as? Int
+        
+        //Analytics
+        Analytics.logEvent(AnalyticsEventViewItem, parameters: [AnalyticsParameterItemID : "Game Over Screen" as NSObject,
+                                                                AnalyticsParameterItemVariant: String(describing: numPlayed) as NSObject])
+        
+        //Interstitial Ad
+        //Ad will only be loaded when numPlayed is set to 0 by active state
+        if (0 == numPlayed!) && (self.scene?.interstitialAd.isReady)! {
+            self.scene?.interstitialAd.present(fromRootViewController: self.parentViewController!)
+        }
+        
+        //Banner Ad
+        bannerAd = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
+        bannerAd.frame.origin.y = (self.scene?.size.height)! - bannerAd.frame.size.height
+        self.parentViewController?.view.addSubview(bannerAd)
+        bannerAd.adUnitID = "ca-app-pub-3441960749414963/6402055503"
+        bannerAd.rootViewController = self.parentViewController
+        bannerAd.load(GADRequest())
         
         //Score animation
         let scoreText = SKLabelNode(fontNamed: "Indie Flower")
@@ -103,6 +126,7 @@ class GameOverState: GameSceneState{
     }
     
     override func willExit(to nextState: GKState) {
+        bannerAd.removeFromSuperview()
         self.scene?.removeAllChildren()
     }
     
@@ -111,7 +135,7 @@ class GameOverState: GameSceneState{
     }
     
     override func update(deltaTime seconds: TimeInterval) {
-        //todo
+        //None
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent) {
@@ -121,7 +145,7 @@ class GameOverState: GameSceneState{
             
             switch touchedNode?.text {
             case "Share"?:
-                let shareText = "I just scored a " + String(describing: self.scene?.score) + " on Tap Master! What can you get?"
+                let shareText = "I just scored a " + String(describing: (self.scene?.score)! ) + " on Tap Master! What can you get?"
                 let activityViewController = UIActivityViewController(activityItems: [shareText as NSString], applicationActivities: nil)
                 parentViewController?.present(activityViewController, animated: true)
                 break

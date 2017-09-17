@@ -9,12 +9,15 @@
 import UIKit
 import SpriteKit
 import GameplayKit
+import GoogleMobileAds
 
 class GameScene: SKScene {
     
     var profileViewController : UIViewController?
     var stateMachine: GKStateMachine!
     var score = 0
+    var numPlayed = 0
+    var interstitialAd: GADInterstitial!
     
     override func didMove(to view: SKView) {
         

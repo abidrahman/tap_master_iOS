@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import SpriteKit
 import GameplayKit
+import Firebase
 
 class MainMenuState: GameSceneState{
     var scene: GameScene?
@@ -27,6 +28,9 @@ class MainMenuState: GameSceneState{
     override func didEnter(from previousState: GKState?) {
         self.scene?.backgroundColor = SKColor.black
         circles = [Circle]()
+        
+        //Analytics
+        Analytics.logEvent(AnalyticsEventViewItem, parameters: [AnalyticsParameterItemID : "Main Menu Screen" as NSObject])
         
         //Tap Master title
         let title = SKLabelNode(fontNamed: "Indie Flower")

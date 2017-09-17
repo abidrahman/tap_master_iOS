@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F6DD7D7A49C2C71D516345C /* Pods_Tap_MasterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7800C2B78041F799E38B2E55 /* Pods_Tap_MasterUITests.framework */; };
 		9062279B1F65329300EAE5AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062279A1F65329300EAE5AE /* AppDelegate.swift */; };
 		906227A11F65329300EAE5AE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906227A01F65329300EAE5AE /* GameScene.swift */; };
 		906227A31F65329300EAE5AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 906227A21F65329300EAE5AE /* GameViewController.swift */; };
@@ -20,11 +21,13 @@
 		907C42A81F67190000B96C10 /* GameOverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42A71F67190000B96C10 /* GameOverState.swift */; };
 		907C42AA1F6747CB00B96C10 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42A91F6747CB00B96C10 /* Circle.swift */; };
 		907C42AC1F67569100B96C10 /* GameSceneState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907C42AB1F67569100B96C10 /* GameSceneState.swift */; };
+		909D5CF21F6A444A0048BCD8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 909D5CF11F6A444A0048BCD8 /* GoogleService-Info.plist */; };
+		909D5CF41F6A45F90048BCD8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 909D5CF31F6A45F90048BCD8 /* AdSupport.framework */; };
 		90B3C3931F685000003F20A5 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90B3C3921F685000003F20A5 /* IndieFlower.ttf */; };
 		90B3C3951F68A594003F20A5 /* AboutGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3941F68A594003F20A5 /* AboutGameState.swift */; };
 		90B3C3991F68BC2C003F20A5 /* HighScoreState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B3C3981F68BC2C003F20A5 /* HighScoreState.swift */; };
-		90E1703A1F664C5900CA6CE5 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90E170381F664C5900CA6CE5 /* background-music-aac.caf */; };
-		90E1703B1F664C5900CA6CE5 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = 90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */; };
+		BBFF43218035036A1E1664E0 /* Pods_Tap_MasterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553E436CEB18BCC8A9FE8337 /* Pods_Tap_MasterTests.framework */; };
+		FFBA06B00C87CD0D00637F20 /* Pods_Tap_Master.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32215C5AFBDDB8BB92A036AB /* Pods_Tap_Master.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A7AAF2EFFEBA93A68B0C74C /* Pods-Tap MasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap MasterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap MasterTests/Pods-Tap MasterTests.release.xcconfig"; sourceTree = "<group>"; };
+		32215C5AFBDDB8BB92A036AB /* Pods_Tap_Master.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_Master.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		553E436CEB18BCC8A9FE8337 /* Pods_Tap_MasterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_MasterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF034B7C950A4D8FB5BB596 /* Pods-Tap Master.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Master.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap Master/Pods-Tap Master.release.xcconfig"; sourceTree = "<group>"; };
+		7800C2B78041F799E38B2E55 /* Pods_Tap_MasterUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tap_MasterUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		906227971F65329300EAE5AE /* Tap Master.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tap Master.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9062279A1F65329300EAE5AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		906227A01F65329300EAE5AE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -64,11 +72,15 @@
 		907C42A71F67190000B96C10 /* GameOverState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverState.swift; sourceTree = "<group>"; };
 		907C42A91F6747CB00B96C10 /* Circle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
 		907C42AB1F67569100B96C10 /* GameSceneState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSceneState.swift; sourceTree = "<group>"; };
+		909D5CF11F6A444A0048BCD8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		909D5CF31F6A45F90048BCD8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		90B3C3921F685000003F20A5 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
 		90B3C3941F68A594003F20A5 /* AboutGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutGameState.swift; sourceTree = "<group>"; };
 		90B3C3981F68BC2C003F20A5 /* HighScoreState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScoreState.swift; sourceTree = "<group>"; };
-		90E170381F664C5900CA6CE5 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
-		90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		D268E2D376ADC2C875E16EB2 /* Pods-Tap MasterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap MasterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap MasterTests/Pods-Tap MasterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D90B604747B1DF637001B1FA /* Pods-Tap MasterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap MasterUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tap MasterUITests/Pods-Tap MasterUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EBB2DB1E97D5C036CEEB18AD /* Pods-Tap Master.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap Master.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap Master/Pods-Tap Master.debug.xcconfig"; sourceTree = "<group>"; };
+		FA26D60828AB8F93665F74D5 /* Pods-Tap MasterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tap MasterUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tap MasterUITests/Pods-Tap MasterUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				909D5CF41F6A45F90048BCD8 /* AdSupport.framework in Frameworks */,
+				FFBA06B00C87CD0D00637F20 /* Pods_Tap_Master.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFF43218035036A1E1664E0 /* Pods_Tap_MasterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +105,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F6DD7D7A49C2C71D516345C /* Pods_Tap_MasterUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223AC44BBC510F324FA8B8F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				909D5CF31F6A45F90048BCD8 /* AdSupport.framework */,
+				32215C5AFBDDB8BB92A036AB /* Pods_Tap_Master.framework */,
+				553E436CEB18BCC8A9FE8337 /* Pods_Tap_MasterTests.framework */,
+				7800C2B78041F799E38B2E55 /* Pods_Tap_MasterUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9062278E1F65329200EAE5AE = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +130,8 @@
 				906227B41F65329300EAE5AE /* Tap MasterTests */,
 				906227BF1F65329300EAE5AE /* Tap MasterUITests */,
 				906227981F65329300EAE5AE /* Products */,
+				EE125D17FF1E7BE583C09DF6 /* Pods */,
+				223AC44BBC510F324FA8B8F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,7 +148,6 @@
 		906227991F65329300EAE5AE /* Tap Master */ = {
 			isa = PBXGroup;
 			children = (
-				90E170371F664C5900CA6CE5 /* Sounds */,
 				9062279A1F65329300EAE5AE /* AppDelegate.swift */,
 				906227A01F65329300EAE5AE /* GameScene.swift */,
 				906227A21F65329300EAE5AE /* GameViewController.swift */,
@@ -135,6 +163,7 @@
 				90B3C3921F685000003F20A5 /* IndieFlower.ttf */,
 				906227A91F65329300EAE5AE /* LaunchScreen.storyboard */,
 				906227AC1F65329300EAE5AE /* Info.plist */,
+				909D5CF11F6A444A0048BCD8 /* GoogleService-Info.plist */,
 			);
 			path = "Tap Master";
 			sourceTree = "<group>";
@@ -157,13 +186,17 @@
 			path = "Tap MasterUITests";
 			sourceTree = "<group>";
 		};
-		90E170371F664C5900CA6CE5 /* Sounds */ = {
+		EE125D17FF1E7BE583C09DF6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				90E170381F664C5900CA6CE5 /* background-music-aac.caf */,
-				90E170391F664C5900CA6CE5 /* pew-pew-lei.caf */,
+				EBB2DB1E97D5C036CEEB18AD /* Pods-Tap Master.debug.xcconfig */,
+				5BF034B7C950A4D8FB5BB596 /* Pods-Tap Master.release.xcconfig */,
+				D268E2D376ADC2C875E16EB2 /* Pods-Tap MasterTests.debug.xcconfig */,
+				1A7AAF2EFFEBA93A68B0C74C /* Pods-Tap MasterTests.release.xcconfig */,
+				FA26D60828AB8F93665F74D5 /* Pods-Tap MasterUITests.debug.xcconfig */,
+				D90B604747B1DF637001B1FA /* Pods-Tap MasterUITests.release.xcconfig */,
 			);
-			path = Sounds;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 906227C51F65329300EAE5AE /* Build configuration list for PBXNativeTarget "Tap Master" */;
 			buildPhases = (
+				9232603DF368E03D6DEFEE5A /* [CP] Check Pods Manifest.lock */,
 				906227931F65329300EAE5AE /* Sources */,
 				906227941F65329300EAE5AE /* Frameworks */,
 				906227951F65329300EAE5AE /* Resources */,
+				80B91C28EAC1AD2222E95935 /* [CP] Embed Pods Frameworks */,
+				0CFB3DCCE5729D3E0C05C9D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 906227C81F65329300EAE5AE /* Build configuration list for PBXNativeTarget "Tap MasterTests" */;
 			buildPhases = (
+				2ADBE2D938400A80EA372D28 /* [CP] Check Pods Manifest.lock */,
 				906227AD1F65329300EAE5AE /* Sources */,
 				906227AE1F65329300EAE5AE /* Frameworks */,
 				906227AF1F65329300EAE5AE /* Resources */,
+				EFA2AFCC49C1FFF5D6D4ED58 /* [CP] Embed Pods Frameworks */,
+				40FF43D2182512C114F7D7D1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 906227CB1F65329300EAE5AE /* Build configuration list for PBXNativeTarget "Tap MasterUITests" */;
 			buildPhases = (
+				570C4B8B8EB24F6D649915BD /* [CP] Check Pods Manifest.lock */,
 				906227B81F65329300EAE5AE /* Sources */,
 				906227B91F65329300EAE5AE /* Frameworks */,
 				906227BA1F65329300EAE5AE /* Resources */,
+				FECD4EAF60BC59AA7D26133F /* [CP] Embed Pods Frameworks */,
+				64280AB0DABDA672F8D3E2CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +276,7 @@
 				TargetAttributes = {
 					906227961F65329300EAE5AE = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82QY849533;
 						ProvisioningStyle = Automatic;
 					};
 					906227B01F65329300EAE5AE = {
@@ -273,12 +316,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90E1703A1F664C5900CA6CE5 /* background-music-aac.caf in Resources */,
 				906227A61F65329300EAE5AE /* Main.storyboard in Resources */,
 				906227A81F65329300EAE5AE /* Assets.xcassets in Resources */,
-				90E1703B1F664C5900CA6CE5 /* pew-pew-lei.caf in Resources */,
 				906227AB1F65329300EAE5AE /* LaunchScreen.storyboard in Resources */,
 				90B3C3931F685000003F20A5 /* IndieFlower.ttf in Resources */,
+				909D5CF21F6A444A0048BCD8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +339,158 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CFB3DCCE5729D3E0C05C9D6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap Master/Pods-Tap Master-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2ADBE2D938400A80EA372D28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap MasterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40FF43D2182512C114F7D7D1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap MasterTests/Pods-Tap MasterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		570C4B8B8EB24F6D649915BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap MasterUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64280AB0DABDA672F8D3E2CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap MasterUITests/Pods-Tap MasterUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B91C28EAC1AD2222E95935 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tap Master/Pods-Tap Master-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap Master/Pods-Tap Master-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9232603DF368E03D6DEFEE5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tap Master-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA2AFCC49C1FFF5D6D4ED58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap MasterTests/Pods-Tap MasterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FECD4EAF60BC59AA7D26133F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tap MasterUITests/Pods-Tap MasterUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		906227931F65329300EAE5AE /* Sources */ = {
@@ -462,30 +656,45 @@
 		};
 		906227C61F65329300EAE5AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBB2DB1E97D5C036CEEB18AD /* Pods-Tap Master.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abid Rahman (J7FAS6H5NU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 82QY849533;
 				INFOPLIST_FILE = "Tap Master/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "abidrahman.Tap-Master";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abidrahman.tapmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		906227C71F65329300EAE5AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BF034B7C950A4D8FB5BB596 /* Pods-Tap Master.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Abid Rahman (J7FAS6H5NU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 82QY849533;
 				INFOPLIST_FILE = "Tap Master/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "abidrahman.Tap-Master";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abidrahman.tapmaster;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		906227C91F65329300EAE5AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D268E2D376ADC2C875E16EB2 /* Pods-Tap MasterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +709,7 @@
 		};
 		906227CA1F65329300EAE5AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A7AAF2EFFEBA93A68B0C74C /* Pods-Tap MasterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +724,7 @@
 		};
 		906227CC1F65329300EAE5AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA26D60828AB8F93665F74D5 /* Pods-Tap MasterUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Tap MasterUITests/Info.plist";
@@ -527,6 +738,7 @@
 		};
 		906227CD1F65329300EAE5AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D90B604747B1DF637001B1FA /* Pods-Tap MasterUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = "Tap MasterUITests/Info.plist";
